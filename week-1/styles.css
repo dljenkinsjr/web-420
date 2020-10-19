@@ -1,0 +1,303 @@
+html {
+scroll-behavior: smooth;
+}
+
+body{
+margin: 0;
+padding: 0;
+font-family: 'Quicksand', sans-serif;
+text-align: left;
+background-image: url(images/background.png);
+background-repeat: no-repeat;
+background-color: #5CD6C8;
+color: #000;
+}
+
+* {
+box-sizing: border-box;
+}
+
+
+
+/* ---- NavBar ------ */
+
+.top{
+float: left;
+font-weight: 500;
+padding-left: 2em;
+}
+
+.navbar{
+background-color: #FEF4D2;
+text-align: right;
+padding: .75em;
+overflow: hidden;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 99;
+}
+        
+}
+    
+.navbar ul{
+list-style-type: none;
+        
+}
+
+.navbar li{
+
+display:inline-block;
+padding-right: 2em;
+        
+}
+    
+.navbar a{
+text-decoration: none;
+color: #000;
+font-weight: 500;
+float: right;
+font-size: 11pt;
+} 
+ 
+.navbar a:hover{
+text-decoration: underline;
+}
+
+/* ---- Header ------ */
+  
+header{
+text-align: center;
+padding-top: 10em;
+}
+
+.header-text{
+font-weight: 400;
+font-size: 4em;
+}
+
+
+
+/* ---- Main ------ */
+
+main{
+max-width: 1600px;
+margin: auto;
+padding-left: 3em;
+padding-right: 3em;
+    
+    
+}
+
+.main-text{
+font-size: 2em;
+font-weight: 400;
+}
+
+main a{
+text-decoration: none;
+color: #000;
+}
+
+main a:hover{
+text-decoration: underline;
+}
+
+.skills-text{
+text-align: center;
+}
+
+.space-col{
+padding: 8px;
+float: left;
+width: 33%;
+}
+
+.skills-style{
+padding: 20px;
+background-color: #fff;
+}
+
+.clear{
+clear: both;
+}
+
+
+/* ---- Footer ------ */
+
+footer{
+clear: both;
+text-align: center;
+}
+
+footer ul{
+list-style-type: none;
+margin-left: -5.45em;        
+}
+
+footer li{
+display:inline-block;
+}
+    
+footer a{
+text-decoration: none;
+color: #000;
+margin-left: 3em;
+} 
+
+footer a:hover{
+text-decoration: underline;
+}
+
+/* ----- Other ---- */
+
+.small-text{
+font-weight: 700;
+color: #000;
+}
+
+#about{
+padding-top: 13em;    
+}
+
+#work{
+padding-top: 7em;    
+}
+
+#contact{
+padding-top: 5em;
+padding-bottom: 3em;
+}
+/* ---- Overlay ----- */
+
+
+/* Gallery */
+
+.row {
+  margin: 8px -16px;
+}
+
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+
+.column {
+  float: left;
+  width: 33%;
+ text-align: center;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+  background-color: #fff;
+  padding: 10px;
+}
+
+
+/* --------- Gallery ------------- */
+
+.gallery {
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  display: block;
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  width: 250px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(2.0,2.0);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+
+
+/* ------ Responsive Design --- */
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+    
+    .space-col{
+    width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+    
+  .space-col{
+    width: 100%;
+    }
+    
+    .navbar a{
+    font-size: 10pt;
+    } 
+ 
+    .navbar li{
+    display:inline-block;
+    padding-right: 1em;
+        
+    }
+
+    .gallery {
+      width: 50%;
+      padding: 5px;
+      background: #fff;
+      box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    }
+
+    .gallery > div > img {
+      width: 150px;
+      transition: .1s transform;
+      transform: translateZ(0); /* hack */
+    }
+
+
+}
+
+    
+
+
+
+
