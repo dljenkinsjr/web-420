@@ -1,3 +1,11 @@
+/*============================================; 
+Title: Assignment 2.3; 
+Author: Professor Krasso ; 
+Date: 20 October 2020; 
+Modified By: Douglas Jenkins; 
+Description: API Gateway 1
+;===========================================*/
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -9,6 +17,8 @@ mongoose.Promise = require('bluebird');
 
 
 var index = require('./routes/index');
+
+var apiCatalog = require("./routes/api-catalog");
 
 
 var app = express();
@@ -28,8 +38,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
+//app.use creation
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -38,7 +48,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', index);
-
+app.use('/api', apiCatalog);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -49,7 +59,7 @@ app.use(function(req, res, next) {
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
+  // set locals, only provides error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
