@@ -27,7 +27,7 @@ var app = express();
  *
  * Database connection
  */
-mongoose.connect('mongodb://admin:admin@ds125578.mlab.com:25578/api-gateway', {
+mongoose.connect('mongodb+srv://admin:Shameca22@buwebdev-cluster-1.s2m0w.mongodb.net/api-gateway', {
     promiseLibrary: require('bluebird')
 }).then ( () => console.log('connection successful'))
   .catch( (err) => console.error(err));
