@@ -1,0 +1,344 @@
+html {
+scroll-behavior: smooth;
+}
+
+body{
+margin: 0;
+padding: 0;
+font-family: 'Quicksand', sans-serif;
+text-align: left;
+background-image: url(images/background.png);
+background-repeat: no-repeat;
+background-color: #5CD6C8;
+color: #000;
+}
+
+* {
+box-sizing: border-box;
+}
+
+
+
+/* ---- NavBar ------ */
+
+.top{
+float: left;
+font-weight: 500;
+padding-left: .5em;
+}
+
+.navbar{
+background-color: #FEF4D2;
+text-align: right;
+padding: .75em;
+overflow: hidden;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 99;
+}
+        
+}
+    
+.navbar ul{
+list-style-type: none;
+        
+}
+
+.navbar li{
+
+display:inline-block;
+padding-right: 2em;
+        
+}
+    
+.navbar a{
+text-decoration: none;
+color: #000;
+font-weight: 500;
+float: right;
+font-size: 11pt;
+} 
+ 
+.navbar a:hover{
+text-decoration: underline;
+}
+
+/* ---- Header ------ */
+  
+header{
+text-align: center;
+padding-top: 10em;
+}
+
+.header-text{
+font-weight: 400;
+font-size: 4em;
+}
+
+
+
+/* ---- Main ------ */
+
+main{
+max-width: 1600px;
+margin: auto;
+padding-left: 3em;
+padding-right: 3em;
+    
+    
+}
+
+.main-text{
+font-size: 2em;
+font-weight: 400;
+}
+
+main a{
+text-decoration: none;
+color: #000;
+}
+
+main a:hover{
+text-decoration: underline;
+}
+
+.skills-text{
+text-align: center;
+}
+
+.space-col{
+padding: 8px;
+float: left;
+width: 33%;
+}
+
+.skills-style{
+padding: 20px;
+background-color: #fff;
+}
+
+.clear{
+clear: both;
+}
+
+
+/* ---- Footer ------ */
+
+footer{
+clear: both;
+text-align: center;
+}
+
+footer ul{
+list-style-type: none;
+margin-left: -5.45em;        
+}
+
+footer li{
+display:inline-block;
+}
+    
+footer a{
+text-decoration: none;
+color: #000;
+margin-left: 3em;
+} 
+
+footer a:hover{
+text-decoration: underline;
+}
+
+/* ----- Other ---- */
+
+.small-text{
+font-weight: 700;
+color: #000;
+}
+
+#about{
+padding-top: 13em;    
+}
+
+#work{
+padding-top: 7em;    
+}
+
+#contact{
+padding-top: 5em;
+padding-bottom: 3em;
+}
+/* ---- Overlay ----- */
+
+
+/* Gallery */
+
+.row {
+  margin: 8px -16px;
+}
+
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+
+.column {
+  float: left;
+  width: 33%;
+ text-align: center;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* --------- Gallery ------------- */
+
+ /* Style the Image Used to Trigger the Modal */
+ .myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 65px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+/* ---------- Video ----------- */
+
+video{
+  padding: 5px;
+}
+
+
+
+
+/* ------ Responsive Design --- */
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+    
+    .space-col{
+    width: 50%;
+    }
+
+
+    .navbar a{
+      font-size: 10pt;
+    } 
+   
+    .navbar li{
+      display:inline-block;
+      padding-right: 1em;
+          
+    }
+
+    .modal-content {
+      width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+    
+  .space-col{
+    width: 100%;
+    }
+
+
+}
+
+    
+
+
+
+
